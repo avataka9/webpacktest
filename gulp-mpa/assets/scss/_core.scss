@@ -1,0 +1,244 @@
+// ==========================================================================
+// VARIABLES
+// ==========================================================================
+
+$tablet-h: 1024px;
+$tablet-v: 768px;
+$mobile-h: 667px;
+$mobile-v: 375px;
+
+// example:
+// media (min-width: $min-tablet-h) {}
+$min-tablet-h: 1025px;
+$min-tablet-v: 769px;
+$min-mobile-h: 668px;
+$min-mobile-v: 376px;
+
+$wrap: 1170px;
+
+$f-base: "Roboto", sans-serif;
+
+$c-white: #fff;
+$c-black: #000;
+$c-grey: #868686;
+$c-grey2: #eaeaea;
+$c-grey3: #585b62;
+$c-grey4: #acacac;
+$c-grey5: #878787;
+$c-base: $c-black;
+$c-blue: #51c8f0;
+$c-blue2: #2abdf0;
+$c-link: $c-blue;
+
+// ==========================================================================
+//   MIXIN'S
+// ==========================================================================
+
+%title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 26px;
+  font-weight: 400;
+
+  @media (max-width: $mobile-h) {
+    font-size: 22px;
+  }
+}
+
+%sub-title {
+  font-style: italic;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+
+  @media (max-width: $mobile-h) {
+    font-size: 16px;
+  }
+}
+
+%text {
+  font-size: 16px;
+  line-height: 1.5em;
+  text-align: center;
+
+  @media (max-width: $tablet-v) {
+    font-size: 14px;
+  }
+
+  @media (max-width: $mobile-h) {
+    font-size: 12px;
+  }
+}
+
+%wrap {
+  max-width: $wrap;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  //min-width: 1170px; // отрубил адаптив
+
+  @media (max-width: $tablet-h) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  @media (max-width: $tablet-v) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  @media (max-width: $mobile-h) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  @media (max-width: $mobile-v) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@mixin wrap($width: $wrap) {
+  max-width: $width;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  //min-width: 1170px;  // отрубил адаптив
+
+  @media (max-width: $tablet-h) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  @media (max-width: $tablet-v) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  @media (max-width: $mobile-h) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  @media (max-width: $mobile-v) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+// .example {
+//   @extend %wrap;
+//   @include wrap(980px);
+// }
+
+// ==========================================================================
+//   FONT'S
+// ==========================================================================
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+// ==========================================================================
+//   BASE
+// ==========================================================================
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+[type=submit] {
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family: $f-base;
+  color: $c-base;
+}
+
+a {
+  color: $c-link;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $c-link;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+svg {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+button,
+input,
+textarea {
+  -webkit-appearance: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: $f-base;
+}
+
+select[data-select] {
+  display: block;
+  width: 100%;
+}
+
+textarea {
+  resize: none;
+}
+
+i {
+  font-style: italic;
+}
+
+/* ==========================================================================
+   HEADER
+   ========================================================================== */
+
+
+
+/* ==========================================================================
+   MAIN
+   ========================================================================== */
+
+
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+
+
+
+/* ==========================================================================
+   BUTTON'S
+   ========================================================================== */
+
+
+
+/* ==========================================================================
+   FORM'S
+   ========================================================================== */
+
+/* ==========================================================================
+   BREADCRUMBS
+   ========================================================================== */
